@@ -7,14 +7,16 @@ public class Vetor {
     private int vetorDecrescente[];
 
     public Vetor() {
-        this.vetorQuaseOrdenado = new int[1000] ;
-        this.vetorDesordenado = new int[1000];
+
         this.vetorDecrescente = new int[1000];
+        preencherDecrescente(this.vetorDecrescente);
     }
 
     public void preencherDecrescente(int vet []){
-        for (int i = vet.length; i>0; i--){
-            vet[i]=i;
+        int cont = 0;
+        for (int i = vet.length-1; i>=0; i--){
+            vet[i]=cont++;
+           // System.out.println("indice"+i+"="+vet[i]);
         }
     }
 
