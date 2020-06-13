@@ -1,6 +1,6 @@
 package com.company;
 
-import org.omg.CORBA.PUBLIC_MEMBER;
+//import org.omg.CORBA.PUBLIC_MEMBER;
 
 import java.util.Random;
 
