@@ -48,6 +48,15 @@ public class Vetor {
 
     }
 
+    public int[] getVetorQuaseOrdenado() {
+        return vetorQuaseOrdenado;
+    }
 
+    public int[] getVetorDesordenado() {
+        return vetorDesordenado;
+    }
 
+    public int[] getVetorDecrescente() {
+        return vetorDecrescente;
+    }
 }
