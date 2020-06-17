@@ -13,8 +13,8 @@ public class Vetor {
 
     public Vetor() {
         random = new Random();
-        this.vetorDecrescente = new int[1000];
-        this.vetorQuaseOrdenado = new int[1000];
+        this.vetorDecrescente = new int[10000];
+        this.vetorQuaseOrdenado = new int[10000];
         this.vetorDesordenado = new int[10000];
         preencherDecrescente(this.vetorDecrescente);
         preencherQuaseOrdenado(this.vetorQuaseOrdenado);
@@ -36,7 +36,7 @@ public class Vetor {
         }
 
         for (int a = (((vet.length)*95)/100) ; a< vet.length; a++ ){
-            vet[a]=random.nextInt(1000);
+            vet[a]=random.nextInt(10000);
         }
 
     }

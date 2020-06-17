@@ -4,7 +4,13 @@ package com.company;
 
 public class heapSort {
 	
-	public void heapSort(int[] vetor){
+	long tempInicial = System.currentTimeMillis();
+	//long tempFinal = System.currentTimeMillis();
+	
+	
+	public heapSort(int[] vetor){
+		System.out.println("O tempo inicial é de: " +tempInicial+ ".");
+		
         int tamanho = vetor.length;
         int i = tamanho / 2, pai, filho, t;
         while (true){
@@ -27,7 +33,9 @@ public class heapSort {
                 }else {break;}
             }
             vetor[pai] = t;
+            System.out.println("O tempo de execução é de: " + (System.currentTimeMillis() - tempInicial) + ".");
         }
+        
+        
     }
-
 }

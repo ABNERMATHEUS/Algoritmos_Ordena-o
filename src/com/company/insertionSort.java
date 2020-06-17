@@ -4,7 +4,12 @@ package com.company;
 
 public class insertionSort {
 	
+	long tempInicial = System.currentTimeMillis();
+	//long tempFinal = System.currentTimeMillis();
+	
 	public insertionSort(int[] vetor){
+		
+		System.out.println("O tempo inicial é de: " +tempInicial+ ".");
 		
 		for (int i = 1; i < vetor.length; i++){
 			
@@ -16,9 +21,10 @@ public class insertionSort {
 				j -= 1;
 			}
 			vetor[j] = aux;
-
+			System.out.println("O tempo de execução é de: " + (System.currentTimeMillis() - tempInicial) + ".");
 		}
-	
+		
 	}
+	
 
 }
